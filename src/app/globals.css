@@ -4,6 +4,7 @@
 
 * {
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 .stroke-text {

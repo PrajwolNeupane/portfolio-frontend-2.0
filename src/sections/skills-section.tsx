@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-export default function AboutSection() {
+export default function SkillsSection() {
   return (
     <div
       className="flex flex-col gap-4 w-full items-center justify-center px-[10%] py-[100px] z-[4]"
-      id="about-section"
+      id="skills-section"
     >
-      <h2 className="text-3xl font-medium text-gray-300">ABOUT</h2>
+      <h2 className="text-3xl font-medium text-gray-300">SKILLS</h2>
       <p className="text-sm leading-[150%] text-gray-100 font-light text-center w-[90%]">
         Hi 👋, I am <span className="text-main-lighter">Prajwol Neupane</span>,
         a <span className="text-main-lighter">Frontend Developer</span> with a

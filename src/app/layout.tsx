@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${jost.className} bg-background text-3xs relative`}>
         <NavBar />
-        {children}
+         {children}
         <MousePointer />
       </body>
     </html>
