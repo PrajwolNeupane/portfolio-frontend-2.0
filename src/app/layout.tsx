@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
-import { NavBar, MousePointer } from "@/components/shared";
+import { MousePointer } from "@/components/shared";
+import { ViewTransitions } from "next-view-transitions";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -19,12 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${jost.className} bg-background text-3xs relative`}>
-        <NavBar />
-         {children}
-        <MousePointer />
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en">
+        <body className={`${jost.className} bg-background text-3xs relative`}>
+          {children}
+          <MousePointer />
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

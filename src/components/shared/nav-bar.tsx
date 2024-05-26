@@ -34,8 +34,8 @@ export default function NavBar() {
     },
     {
       name: "Projects",
-      position: 28,
-      id: "#about-section",
+      position: 13.5,
+      id: "projects-section",
     },
     {
       name: "Certification",
@@ -64,7 +64,7 @@ export default function NavBar() {
   };
 
   return (
-    <div className="flex w-full items-center px-20 py-5 justify-between z-[5] sticky top-0 backdrop-blur-[10px]">
+    <div className="flex w-full items-center px-20 py-5 justify-between z-[5] sticky top-0 backdrop-blur-[20px]">
       <h2 className="text-white text-lg font-medium">PN</h2>
       <div className="flex items-center text-gray-100 text-xs gap-10 ml-20 relative">
         {links?.map((curr, indx) => (
@@ -87,7 +87,10 @@ export default function NavBar() {
             currentIndex != null ? "h-[6px]" : "h-[0px]"
           )}
           style={{
-            left: currentIndex != null ? `${(viewportWidth * currentIndex) / 100}px` : "0px",
+            left:
+              currentIndex != null
+                ? `${(viewportWidth * currentIndex) / 100}px`
+                : "0px",
           }}
         ></div>
       </div>

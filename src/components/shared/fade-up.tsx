@@ -19,7 +19,7 @@ export default function FadeUp({
   duration = 0.5,
 }: Props) {
   useEffect(() => {
-    gsap.fromTo(
+    gsap?.fromTo(
       `#${id}`,
       {
         opacity: 0,

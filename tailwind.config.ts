@@ -24,9 +24,13 @@ const config: Config = {
       },
       backgroundImage: {
         "mouse-gradient": "linear-gradient(to right,#FF4500,#FFFFFF)",
+        "skill-gradient":
+          "linear-gradient(to right bottom,#1A1A1A,#171717,#171717)",
       },
       colors: {
+        "background-lighter": "#343434",
         background: "#1A1A1A",
+        "background-darker": "#171717",
         main: "#FF4500",
         "main-lighter": "#FF7043",
         "main-darker": "#CC3700",

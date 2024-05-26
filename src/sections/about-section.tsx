@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function AboutSection() {
   return (
     <div
-      className="flex flex-col gap-4 w-full items-center justify-center px-[10%] py-[100px] z-[4]"
+      className="flex flex-col gap-10 w-full items-center justify-center px-[10%] py-[100px] z-[4]"
       id="about-section"
     >
       <FadeUp id="about-head" duration={0.75} dealy={0.5}>
