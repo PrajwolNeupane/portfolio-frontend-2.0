@@ -76,7 +76,7 @@ export default function HeaderSection() {
         alt="Personal Image"
         width={1000}
         height={1000}
-        className="w-[400px] absolute bottom-[90px] left-[36%] opacity-0"
+        className="w-[400px] absolute bottom-[90px] opacity-0"
       />
     </div>
   );

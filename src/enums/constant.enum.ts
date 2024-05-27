@@ -1,3 +1,13 @@
+import UIVisuals from "../../public/assets/projects/ui-visuals-community.png";
+import MeroGana from "../../public/assets/projects/mero-gana.png";
+import ShikshyaLanding from "../../public/assets/projects/shikshya-app-landing.png";
+import ThreadClone from "../../public/assets/projects/thread-clone.png";
+import FlixMovie from "../../public/assets/projects/flix-movie.png";
+import ShikshyaAdmin1 from "../../public/assets/projects/shikshya-admin-1.png";
+import ShikshyaAdmin2 from "../../public/assets/projects/shikshya-admin-2.png";
+import ShikshyaAdmin3 from "../../public/assets/projects/shikshya-admin-3.png";
+import ShikshyaAdmin4 from "../../public/assets/projects/shikshya-admin-4.png";
+
 export const skills = [
   {
     name: "React JS",
@@ -10,6 +20,11 @@ export const skills = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1690811595806-Skill-1.png?alt=media&token=2c050a93-e792-43dd-b85f-a62e3071ddd2",
   },
   {
+    name: "EJS",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1687581724196-Skill-8.png?alt=media&token=9189c36d-3e6b-433a-96a9-61ea1c79b697",
+  },
+  {
     name: "Javascript",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607341669-Skill-3.png?alt=media&token=d354fdb8-a3d0-43e0-aab2-43f158e7cb50",
@@ -20,9 +35,8 @@ export const skills = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607108089-Skill-6.png?alt=media&token=8c4cbc57-3551-44d7-9b68-fb0f2828c178",
   },
   {
-    name: "React Query",
-    image:
-      "https://velog.velcdn.com/images/h0ngwon/post/804ad504-a83e-4ab9-b658-3c70c4675c3d/image.png",
+    name: "Tanstack React Query",
+    image: "https://tanstack.com/_build/assets/logo-color-600w-Bx4vtR8J.png",
   },
   {
     name: "Tailwind CSS",
@@ -58,59 +72,243 @@ export const skills = [
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670606999877-Skill-2.png?alt=media&token=20ad4a73-2c68-4d9c-8583-9902465778fc",
   },
+  {
+    name: "Mongo DB",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607195809-Skill-7.png?alt=media&token=63715b9b-2572-423c-bc7d-b37c3b451d0d",
+  },
 ];
 
 export const projects = [
   {
+    id: 1,
+    title: "Thread Clone",
+    skills: [
+      {
+        name: "Next JS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1690811595806-Skill-1.png?alt=media&token=2c050a93-e792-43dd-b85f-a62e3071ddd2",
+      },
+      {
+        name: "Tailwind CSS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1687582312029-Skill-3.png?alt=media&token=c3af5c6d-23da-40d7-bdd4-261bf832c040",
+      },
+      {
+        name: "Mongo DB",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607195809-Skill-7.png?alt=media&token=63715b9b-2572-423c-bc7d-b37c3b451d0d",
+      },
+      {
+        name: "Typescript",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607108089-Skill-6.png?alt=media&token=8c4cbc57-3551-44d7-9b68-fb0f2828c178",
+      },
+      {
+        name: "UploadThing",
+        image:
+          "https://raw.githubusercontent.com/pingdotgg/uploadthing/main/assets/uploadthing-logo-dark-background.svg",
+      },
+      {
+        name: "Auth0",
+        image:
+          "https://static-00.iconduck.com/assets.00/auth0-icon-1832x2048-ewzjrdwk.png",
+      },
+    ],
+    description:
+      "The Thread Website is an innovative platform I designed and developed to offer users a seamless and engaging experience with various thread communities. Built using cutting-edge technologies such as Next.js with TypeScript for robust and efficient development, Tailwind CSS for rapid and responsive styling, and MongoDB for scalable data management, the website ensures optimal performance and user experience. Auth0 is integrated for secure user authentication, allowing for multiple login methods, while Upload Thing handles file uploads, enabling users to share images, documents, and other files within their communities. This combination of technologies creates a user-friendly and interactive environment for discussions and community interactions.",
+    link: "https://threads.prajwolneupane.com.np/",
+    repo_link: "https://github.com/PrajwolNeupane/threads-clone",
+    photo_url: ThreadClone,
+    rating: 3,
+  },
+  {
+    id: 2,
     title: "Mero Gana",
-    skills: ["React", "Material UI", "GSAP"],
+    skills: [
+      {
+        name: "React JS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670606917820-Skill-5.png?alt=media&token=138919d1-24b3-45da-9ee7-b20a284971d9",
+      },
+      {
+        name: "Material UI",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607159118-Skill-4.png?alt=media&token=d9db5d59-96cc-4394-8c70-c8dcdeb42e085",
+      },
+      {
+        name: "GSAP",
+        image:
+          "https://logowik.com/content/uploads/images/greensock-gsap4425.logowik.com.webp",
+      },
+    ],
     description:
       "Mero Gana is a website where you can listen to songs. I build this website from react with typescript. I use Material UI Components for CSS and GSAP plugin for animation. I was able to host this site from netlify.",
     link: "https://merogana.prajwolneupane.com.np/",
     repo_link: "https://github.com/PrajwolNeupane/Mero-Gana",
-    photo_url:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670605948046-Project-10.png?alt=media&token=b80b1d44-d604-40c8-9900-1206bf7e9040",
-    video_url: null,
+    photo_url: MeroGana,
     rating: 1,
   },
   {
+    id: 3,
     title: "Flix Movie",
-    skills: ["React", "Chakra UI", "TypeScript", "Redux", "Firebase"],
+    skills: [
+      {
+        name: "React JS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670606917820-Skill-5.png?alt=media&token=138919d1-24b3-45da-9ee7-b20a284971d9",
+      },
+      {
+        name: "Chakra UI",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1687582157569-Skill-6.png?alt=media&token=21393a98-626d-4cfc-98b5-4ab5d4f71e15",
+      },
+      {
+        name: "Typescript",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607108089-Skill-6.png?alt=media&token=8c4cbc57-3551-44d7-9b68-fb0f2828c178",
+      },
+      {
+        name: "Redux",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607068837-Skill-3.png?alt=media&token=3da84ce4-3b1b-4789-aa09-eb2ddccbef82",
+      },
+      {
+        name: "Firebase",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsM21CRESG1u_IGSGbGRt8Ul_zrpUDmo7hxoBJ0U7Vpg&s",
+      },
+    ],
     description:
       "Flix Movie is a website for movie and series lovers. It is built from Firebase, The Movie Database API, and TypeScript Language. Chakra UI is used for Styling this website. Redux State Management is used to manage State.",
     link: "https://flixmovie.prajwolneupane.com.np/",
     repo_link: "https://github.com/PrajwolNeupane/Flix-Movie",
-    photo_url:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670605948046-Project-10.png?alt=media&token=b80b1d44-d604-40c8-9900-1206bf7e9040",
-    video_url: null,
+    photo_url: FlixMovie,
     rating: 2,
   },
   {
+    id: 4,
     title: "UI Visuals Community Site",
-    skills: ["EJS", "Node.js", "Tailwind CSS", "GSAP"],
+    skills: [
+      {
+        name: "EJS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1687581724196-Skill-8.png?alt=media&token=9189c36d-3e6b-433a-96a9-61ea1c79b697",
+      },
+      {
+        name: "Node JS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670606972299-Skill-0.png?alt=media&token=dd25222c-dba4-4ac9-9b15-09472ec8807c",
+      },
+      {
+        name: "Tailwind CSS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1687582312029-Skill-3.png?alt=media&token=c3af5c6d-23da-40d7-bdd4-261bf832c040",
+      },
+      ,
+      {
+        name: "GSAP",
+        image:
+          "https://logowik.com/content/uploads/images/greensock-gsap4425.logowik.com.webp",
+      },
+    ],
     description:
       "Welcome to the UI Visuals Community website of Herald College Kathmandu! This site is created using EJS and Node.js for dynamic and server-side rendering, ensuring fast and efficient performance. Tailwind CSS is used for a beautiful, responsive design, while GSAP brings smooth and captivating animations. Explore the site to learn about our community members, various departments, and our core motives. This platform aims to provide all the essential information about our community in a visually appealing and user-friendly manner.",
     link: "https://uivisualscommunity.heraldcollege.edu.np/",
-    repo_link: null,
-    photo_url:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670605948046-Project-10.png?alt=media&token=b80b1d44-d604-40c8-9900-1206bf7e9040",
-    video_url: null,
-    rating: 4,
+    photo_url: UIVisuals,
+    rating: 4.5,
   },
   {
-    title: "Shiksya App Landing Site",
-    skills: ["Next.js", "Typescript", "Tailwind CSS"],
+    id: 5,
+    title: "Shikshya App ( Landing Site )",
+    skills: [
+      {
+        name: "Next JS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1690811595806-Skill-1.png?alt=media&token=2c050a93-e792-43dd-b85f-a62e3071ddd2",
+      },
+      {
+        name: "Typescript",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607108089-Skill-6.png?alt=media&token=8c4cbc57-3551-44d7-9b68-fb0f2828c178",
+      },
+      {
+        name: "Tailwind CSS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1687582312029-Skill-3.png?alt=media&token=c3af5c6d-23da-40d7-bdd4-261bf832c040",
+      },
+    ],
     description:
       "Welcome to the landing page for Shikshya App, a comprehensive School Management System developed by ShotCoder Tech. Although the full system is currently on hold as we focus on another important project, this landing page provides a glimpse into what’s coming. Built using Next.js, Tailwind CSS, and TypeScript, the page is designed for speed, responsiveness, and a modern look. The full system (Shiksya App), is built with React.js, TypeScript, Redux, Tanstack Query, and Tanstack Table, promising robust performance and efficient data management for schools. Stay tuned for updates!",
     link: "https://shikshya.app/",
     repo_link: null,
-    photo_url:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670605948046-Project-10.png?alt=media&token=b80b1d44-d604-40c8-9900-1206bf7e9040",
-    video_url: null,
+    photo_url: ShikshyaLanding,
+    rating: 4,
+  },
+  {
+    id: 6,
+    title: "Shikshya App ( Admin Panel )",
+    skills: [
+      {
+        name: "React JS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670606917820-Skill-5.png?alt=media&token=138919d1-24b3-45da-9ee7-b20a284971d9",
+      },
+      {
+        name: "Typescript",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607108089-Skill-6.png?alt=media&token=8c4cbc57-3551-44d7-9b68-fb0f2828c178",
+      },
+      {
+        name: "Tailwind CSS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1687582312029-Skill-3.png?alt=media&token=c3af5c6d-23da-40d7-bdd4-261bf832c040",
+      },
+      {
+        name: "Redux",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607068837-Skill-3.png?alt=media&token=3da84ce4-3b1b-4789-aa09-eb2ddccbef82",
+      },
+      {
+        name: "Tanstack React Query",
+        image:
+          "https://tanstack.com/_build/assets/logo-color-600w-Bx4vtR8J.png",
+      },
+      {
+        name: "Tanstack React Table",
+        image:
+          "https://tanstack.com/_build/assets/logo-color-600w-Bx4vtR8J.png",
+      },
+      {
+        name: "React Hook Form",
+        image:
+          "https://react-hook-form.com/images/logo/react-hook-form-logo-only.png",
+      },
+    ],
+    description:
+      "The Shikshya App and Smart School Management System is a robust admin panel developed using React, Typescript, Tailwind CSS, Redux, Tanstack React Query, Tanstack React Table, and React Hook Form. Catering to various user roles such as FrontDesk Officer, Librarian, Principal, and Employee, the system empowers users to execute tasks delegated by the Admin (Principal). It encompasses modules like Student Management, Employee Management, Class Management, Role Management, Attendance Tracking, Parent Management, Book Assets Management, Subject Management, Exam Management, Grade Management, House Management, and Finance Management, providing a comprehensive solution for efficient school administration.",
+    link: null,
+    repo_link: null,
+    photo_url: [
+      ShikshyaAdmin1,
+      ShikshyaAdmin2,
+      ShikshyaAdmin3,
+      ShikshyaAdmin4,
+      MeroGana,
+    ],
     rating: 5,
   },
 ];
 
 export const getTopRatedProjects = () => {
   return projects.sort((a, b) => b.rating - a.rating);
+};
+
+export const getProject = (id: number) => {
+  const index = projects.findIndex((curr) => curr.id === id);
+  if (index != -1) {
+    return projects[index];
+  } else {
+    return null;
+  }
 };

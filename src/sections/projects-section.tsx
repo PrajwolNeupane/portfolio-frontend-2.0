@@ -1,7 +1,6 @@
 import { FadeUp } from "@/components/shared";
 import { getTopRatedProjects } from "@/enums/constant.enum";
 import { Link } from "next-view-transitions";
-import Image from "next/image";
 
 export default function ProjectsSection() {
   return (
@@ -17,7 +16,7 @@ export default function ProjectsSection() {
       <div className="grid grid-cols-2 gap-x-10 gap-y-5 w-full">
         {getTopRatedProjects()?.map((curr, indx) => (
           <Link
-            href="/project"
+            href={`/project/${curr.id}`}
             key={indx}
             className="col-span-1 hover:scale-110 transition-all duration-500 ease-out cursor-pointer"
           >
