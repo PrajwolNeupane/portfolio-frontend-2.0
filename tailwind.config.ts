@@ -28,7 +28,7 @@ const config: Config = {
           "linear-gradient(to right bottom,#1A1A1A,#171717,#171717)",
       },
       colors: {
-        "background-lighter": "#343434",
+        "background-lighter": "#262626",
         background: "#1A1A1A",
         "background-darker": "#171717",
         main: "#FF4500",

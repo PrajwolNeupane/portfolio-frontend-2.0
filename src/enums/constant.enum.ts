@@ -220,7 +220,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Shikshya App ( Landing Site )",
+    title: "Shikshya App ( Landing Site ) - Shotcoder Tech",
     skills: [
       {
         name: "Next JS",
@@ -247,7 +247,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Shikshya App ( Admin Panel )",
+    title: "Shikshya App ( Admin Panel ) - Shotcoder Tech",
     skills: [
       {
         name: "React JS",
@@ -289,13 +289,7 @@ export const projects = [
       "The Shikshya App and Smart School Management System is a robust admin panel developed using React, Typescript, Tailwind CSS, Redux, Tanstack React Query, Tanstack React Table, and React Hook Form. Catering to various user roles such as FrontDesk Officer, Librarian, Principal, and Employee, the system empowers users to execute tasks delegated by the Admin (Principal). It encompasses modules like Student Management, Employee Management, Class Management, Role Management, Attendance Tracking, Parent Management, Book Assets Management, Subject Management, Exam Management, Grade Management, House Management, and Finance Management, providing a comprehensive solution for efficient school administration.",
     link: null,
     repo_link: null,
-    photo_url: [
-      ShikshyaAdmin1,
-      ShikshyaAdmin2,
-      ShikshyaAdmin3,
-      ShikshyaAdmin4,
-      MeroGana,
-    ],
+    photo_url: [ShikshyaAdmin1, ShikshyaAdmin2, ShikshyaAdmin3, ShikshyaAdmin4],
     rating: 5,
   },
 ];

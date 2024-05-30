@@ -1,66 +1,54 @@
 "use client";
 import { Button } from "@/components/shared";
 import cn from "@/utils/class-names";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 
 export default function NavBar() {
   const [currentIndex, setCurrentIndex] = useState<null | number>(null);
   const [viewportWidth, setViewportWidth] = useState(0);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setViewportWidth(window.innerWidth);
-    };
-
-    handleResize(); // Set initial viewport width
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   const links = [
     {
       name: "About",
-      position: 1.5,
       id: "about-section",
     },
     {
       name: "Skills",
-      position: 7.1,
       id: "skills-section",
     },
     {
       name: "Projects",
-      position: 13.5,
       id: "projects-section",
     },
-    {
-      name: "Certification",
-      position: 45.5,
-      id: "#about-section",
-    },
-    {
-      name: "Blogs",
-      position: 61.5,
-      id: "#about-section",
-    },
+    // {
+    //   name: "Certification",
+    //   id: "#about-section",
+    // },
+    // {
+    //   name: "Blogs",
+    //   id: "#about-section",
+    // },
     {
       name: "Activities",
-      position: 75.5,
       id: "#about-section",
     },
     {
       name: "Testimonials",
-      position: 92.5,
       id: "#about-section",
+    },
+    {
+      name: "Contact",
+      id: "contact-section",
     },
   ];
 
   const handleSetActive = (to: string) => {
-    setCurrentIndex(links.find((curr) => curr.id === to)?.position || null);
+    setCurrentIndex(
+      links.findIndex((curr) => curr.id == to) == -1
+        ? 0
+        : links.findIndex((curr) => curr.id == to)
+    );
   };
 
   return (
@@ -75,24 +63,21 @@ export default function NavBar() {
             smooth={true}
             duration={250}
             onSetActive={handleSetActive}
+            classID="relative"
           >
+            <div
+              className={cn(
+                `bg-main-lighter w-[5px] aspect-square rounded-full mx-auto transition-all duration-300 ease-in-out`,
+                currentIndex === indx
+                  ? " translate-y-[-4px] opacity-100"
+                  : "translate-y-4 opacity-0"
+              )}
+            ></div>
             <h4 className="cursor-pointer hover:text-main-lighter transition-all">
               {curr.name}
             </h4>
           </Link>
         ))}
-        <div
-          className={cn(
-            "aspect-square bg-main-lighter rounded-full absolute top-[-10px] transition-all ease-out delay-150",
-            currentIndex != null ? "h-[6px]" : "h-[0px]"
-          )}
-          style={{
-            left:
-              currentIndex != null
-                ? `${(viewportWidth * currentIndex) / 100}px`
-                : "0px",
-          }}
-        ></div>
       </div>
       <Button title="View My CV" className="w-[180px]" variant="filled" />
     </div>

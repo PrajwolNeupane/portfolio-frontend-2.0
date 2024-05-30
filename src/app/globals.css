@@ -11,3 +11,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #FF7043 !important;
+}

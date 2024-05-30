@@ -4,6 +4,8 @@ import {
   AboutSection,
   SkillsSection,
   ProjectsSection,
+  ActivitySection,
+  ContactSection,
 } from "@/sections";
 
 export default function Home() {
@@ -14,8 +16,8 @@ export default function Home() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
-      <HeaderSection />
-      <AboutSection />
+      <ActivitySection />
+      <ContactSection />
     </>
   );
 }
