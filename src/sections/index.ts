@@ -4,6 +4,7 @@ import SkillsSection from "./skills-section";
 import ProjectsSection from "./projects-section";
 import ActivitySection from "./activity-section";
 import ContactSection from "./contact-section";
+import TestimonialsSection from "./testimonials-section";
 
 export {
   HeaderSection,
@@ -11,5 +12,6 @@ export {
   SkillsSection,
   ProjectsSection,
   ActivitySection,
-  ContactSection
+  ContactSection,
+  TestimonialsSection,
 };

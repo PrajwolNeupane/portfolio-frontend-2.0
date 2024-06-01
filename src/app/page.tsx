@@ -6,6 +6,7 @@ import {
   ProjectsSection,
   ActivitySection,
   ContactSection,
+  TestimonialsSection,
 } from "@/sections";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <SkillsSection />
       <ProjectsSection />
       <ActivitySection />
+      <TestimonialsSection />
       <ContactSection />
     </>
   );
