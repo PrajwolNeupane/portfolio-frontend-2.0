@@ -3,6 +3,8 @@ import { Jost } from "next/font/google";
 import "./globals.css";
 import { MousePointer } from "@/components/shared";
 import { ViewTransitions } from "next-view-transitions";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -25,6 +27,18 @@ export default function RootLayout({
         <body className={`${jost.className} bg-background text-3xs relative`}>
           {children}
           <MousePointer />
+          <ToastContainer
+            position="bottom-right"
+            autoClose={4000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
         </body>
       </html>
     </ViewTransitions>

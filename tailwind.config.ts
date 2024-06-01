@@ -26,6 +26,7 @@ const config: Config = {
         "mouse-gradient": "linear-gradient(to right,#FF4500,#FFFFFF)",
         "skill-gradient":
           "linear-gradient(to right bottom,#1A1A1A,#171717,#171717)",
+        "testimonial-gradient": "linear-gradient(to bottom,#262626,#1A1A1A)",
       },
       colors: {
         "background-lighter": "#262626",

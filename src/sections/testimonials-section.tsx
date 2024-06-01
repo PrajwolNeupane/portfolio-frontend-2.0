@@ -1,4 +1,5 @@
 import { FadeUp, TestimonialSlider } from "@/components/shared";
+import { testimonials } from "@/enums/constant.enum";
 
 export default function TestimonialsSection() {
   return (
@@ -19,7 +20,7 @@ export default function TestimonialsSection() {
           Hear from my colleagues / co workers
         </p>
       </FadeUp>
-      <TestimonialSlider />
+      <TestimonialSlider testimonials={testimonials} />
     </div>
   );
 }
