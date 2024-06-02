@@ -1,8 +1,9 @@
 "use client";
 import { Button } from "@/components/shared";
 import cn from "@/utils/class-names";
+import Link from "next/link";
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function NavBar() {
   const [currentIndex, setCurrentIndex] = useState<null | number>(null);
@@ -21,25 +22,17 @@ export default function NavBar() {
       name: "Projects",
       id: "projects-section",
     },
-    // {
-    //   name: "Certification",
-    //   id: "#about-section",
-    // },
-    // {
-    //   name: "Blogs",
-    //   id: "#about-section",
-    // },
     {
       name: "Activities",
       id: "#about-section",
     },
     {
       name: "Testimonials",
-      id: "#about-section",
+      id: "testimonials-section",
     },
     {
       name: "Contact",
-      id: "contact-section",
+      id: "contacts-section",
     },
   ];
 
@@ -56,7 +49,7 @@ export default function NavBar() {
       <h2 className="text-white text-lg font-medium">PN</h2>
       <div className="flex items-center text-gray-100 text-xs gap-10 ml-20 relative">
         {links?.map((curr, indx) => (
-          <Link
+          <ScrollLink
             key={indx}
             to={curr.id}
             spy={true}
@@ -76,10 +69,17 @@ export default function NavBar() {
             <h4 className="cursor-pointer hover:text-main-lighter transition-all">
               {curr.name}
             </h4>
-          </Link>
+          </ScrollLink>
         ))}
       </div>
-      <Button title="View My CV" className="w-[180px]" variant="filled" />
+      <Link
+        target="blank"
+        href={
+          "https://drive.google.com/file/d/1R6KyuiaXQ7BUbgP6t-knX9lLZ33Rt6sS/view"
+        }
+      >
+        <Button title="View My CV" className="w-[180px]" variant="filled" />
+      </Link>
     </div>
   );
 }

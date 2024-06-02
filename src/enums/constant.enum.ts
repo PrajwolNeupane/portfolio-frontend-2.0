@@ -7,6 +7,7 @@ import ShikshyaAdmin1 from "../../public/assets/projects/shikshya-admin-1.png";
 import ShikshyaAdmin2 from "../../public/assets/projects/shikshya-admin-2.png";
 import ShikshyaAdmin3 from "../../public/assets/projects/shikshya-admin-3.png";
 import ShikshyaAdmin4 from "../../public/assets/projects/shikshya-admin-4.png";
+import Activity2 from "../../public/assets/activity/acitivty_2.png";
 
 export const skills = [
   {
@@ -358,6 +359,41 @@ export const testimonials = [
         name: "mail",
         link: "parajulipreukti@gmail.com",
       },
+    ],
+  },
+];
+
+export const activity = [
+  {
+    image: Activity2,
+    title: "Champion of Frontend 2.0 Competition",
+    description: [
+      `I am thrilled to announce that I secured the First Position in the
+    Frontend 2.0 competition, a prestigious event organized by the UI
+    Visuals Community within Herald DevCorps at Herald College
+    Kathmandu. The competition challenged participants to create a
+    website using React.js. This achievement is a testament to my
+    dedication and the progress I've made through 1.5 years of daily
+    practice. Additionally, winning this competition has opened the door
+    to an exciting internship opportunity at ShotCoder Tech as a React
+    Developer. This experience has not only honed my skills but also
+    underscored the value of community and continuous learning.`,
+    ],
+  },
+  {
+    image: Activity2,
+    title: "DEVFEST",
+    description: [
+      `I am thrilled to announce that I secured the First Position in the
+    Frontend 2.0 competition, a prestigious event organized by the UI
+    Visuals Community within Herald DevCorps at Herald College
+    Kathmandu. The competition challenged participants to create a
+    website using React.js. This achievement is a testament to my
+    dedication and the progress I've made through 1.5 years of daily
+    practice. Additionally, winning this competition has opened the door
+    to an exciting internship opportunity at ShotCoder Tech as a React
+    Developer. This experience has not only honed my skills but also
+    underscored the value of community and continuous learning.`,
     ],
   },
 ];

@@ -1,4 +1,5 @@
 import { ActivitySlider, FadeUp } from "@/components/shared";
+import { activity } from "@/enums/constant.enum";
 
 export default function ActivitySection() {
   return (
@@ -11,7 +12,12 @@ export default function ActivitySection() {
           ACTIVITY
         </h2>
       </FadeUp>
-      {/* <ActivitySlider /> */}
+      <FadeUp id="contact-tag" duration={0.75} dealy={0.5}>
+        <h4 className="text-sm text-main-lighter" id="contact-tag">
+          Activities Involved
+        </h4>
+      </FadeUp>
+      <ActivitySlider activity={activity} />
     </div>
   );
 }
