@@ -296,68 +296,45 @@ export const projects = [
 
 export const testimonials = [
   {
-    name: "Preukti Parajuli",
-    role: "UI/UX Intern Designer at Shotcoder Tech",
-    photo:
-      "https://media.licdn.com/dms/image/D5603AQFPHg-x2n-GPw/profile-displayphoto-shrink_800_800/0/1712045787459?e=1722470400&v=beta&t=D1CzCZ1Kl2C5rcq-CkFPm1_2au4vh-LYsAi-obAw6lk",
+    name: "Nirdesh Pokharel",
+    role: "Backend Developer at Shotcoder Tech",
+    photo: "https://www.nirdeshpokhrel.com.np/_nuxt/nirdesh.9b0f20ef.jpg",
     description:
       "He is a hardworking and helpful frontend developer. He consistently brings our designs to life with precision, creating seamless and accurate websites using React and Next.js. His dedication ensures our visions are perfectly realized.",
     links: [
       {
         name: "linkedin",
-        link: "https://www.linkedin.com/in/preukti-parajuli-633964259/",
+        link: "https://www.linkedin.com/in/realnirdesh/",
       },
       {
         name: "portfolio",
-        link: "https://preuktiparajuli.com.np",
+        link: "https://www.nirdeshpokhrel.com.np/",
       },
       {
         name: "mail",
-        link: "parajulipreukti@gmail.com",
+        link: "mail@nirdeshpokhrel.com.np",
       },
     ],
   },
   {
-    name: "Preukti Parajuli",
-    role: "UI/UX Intern Designer at Shotcoder Tech",
+    name: "Laxman Magarati",
+    role: "Flutter Developer at Shotcoder Tech",
     photo:
-      "https://media.licdn.com/dms/image/D5603AQFPHg-x2n-GPw/profile-displayphoto-shrink_800_800/0/1712045787459?e=1722470400&v=beta&t=D1CzCZ1Kl2C5rcq-CkFPm1_2au4vh-LYsAi-obAw6lk",
+      "https://media.licdn.com/dms/image/D5603AQGj0oa6C1zROA/profile-displayphoto-shrink_800_800/0/1715511188175?e=1723075200&v=beta&t=XMYj-8Gb8Y-8LU99mGePvIreeLYQEVjXlhqVGiK-Y9Q",
     description:
       "He is a hardworking and helpful frontend developer. He consistently brings our designs to life with precision, creating seamless and accurate websites using React and Next.js. His dedication ensures our visions are perfectly realized.",
     links: [
       {
         name: "linkedin",
-        link: "https://www.linkedin.com/in/preukti-parajuli-633964259/",
+        link: "https://www.linkedin.com/in/lmagarati/",
       },
       {
         name: "portfolio",
-        link: "https://preuktiparajuli.com.np",
+        link: "https://magaratilaxman.com.np",
       },
       {
         name: "mail",
-        link: "parajulipreukti@gmail.com",
-      },
-    ],
-  },
-  {
-    name: "Preukti Parajuli",
-    role: "UI/UX Intern Designer at Shotcoder Tech",
-    photo:
-      "https://media.licdn.com/dms/image/D5603AQFPHg-x2n-GPw/profile-displayphoto-shrink_800_800/0/1712045787459?e=1722470400&v=beta&t=D1CzCZ1Kl2C5rcq-CkFPm1_2au4vh-LYsAi-obAw6lk",
-    description:
-      "He is a hardworking and helpful frontend developer. He consistently brings our designs to life with precision, creating seamless and accurate websites using React and Next.js. His dedication ensures our visions are perfectly realized.",
-    links: [
-      {
-        name: "linkedin",
-        link: "https://www.linkedin.com/in/preukti-parajuli-633964259/",
-      },
-      {
-        name: "portfolio",
-        link: "https://preuktiparajuli.com.np",
-      },
-      {
-        name: "mail",
-        link: "parajulipreukti@gmail.com",
+        link: "laxmanmagrati@gmail.com",
       },
     ],
   },

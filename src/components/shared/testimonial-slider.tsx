@@ -15,6 +15,7 @@ import {
   MailIcon,
 } from "../../../public/assets/icons";
 import { toast } from "react-toastify";
+import FadeUp from "./fade-up";
 
 interface Props {
   testimonials: {
@@ -180,46 +181,51 @@ export function Slide({
 
 export default function TestimonialSlider({ testimonials }: Props) {
   return (
-    <div className="flex w-full items-center justify-center my-5 relative">
-      <div className="w-[90%] relative">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation={{
-            nextEl: ".next-button",
-            prevEl: ".prev-button",
-          }}
-          scrollbar={{ draggable: true }}
-          className="flex flex-col items-center justify-center w-full"
-          autoplay={{
-            delay: 6000,
-            disableOnInteraction: true,
-            pauseOnMouseEnter: true,
-          }}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-        >
-          <NextButton />
-          <PrevButton />
-          {testimonials?.map((curr, indx) => (
-            <SwiperSlide
-              className="flex w-full items-center justify-center"
-              key={indx}
-            >
-              <Slide
-                image={curr.photo}
-                name={curr.name}
-                role={curr.role}
-                description={curr.description}
-                links={curr.links}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+    <FadeUp id="testimonial-slider" duration={0.75} dealy={0.5}>
+      <div
+        className="flex w-full items-center justify-center my-5 relative"
+        id="testimonial-slider"
+      >
+        <div className="w-[90%] relative">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation={{
+              nextEl: ".next-button",
+              prevEl: ".prev-button",
+            }}
+            scrollbar={{ draggable: true }}
+            className="flex flex-col items-center justify-center w-full"
+            autoplay={{
+              delay: 6000,
+              disableOnInteraction: true,
+              pauseOnMouseEnter: true,
+            }}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+          >
+            <NextButton />
+            <PrevButton />
+            {testimonials?.map((curr, indx) => (
+              <SwiperSlide
+                className="flex w-full items-center justify-center"
+                key={indx}
+              >
+                <Slide
+                  image={curr.photo}
+                  name={curr.name}
+                  role={curr.role}
+                  description={curr.description}
+                  links={curr.links}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
-    </div>
+    </FadeUp>
   );
 }
