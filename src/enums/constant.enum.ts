@@ -37,10 +37,6 @@ export const skills = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607108089-Skill-6.png?alt=media&token=8c4cbc57-3551-44d7-9b68-fb0f2828c178",
   },
   {
-    name: "Tanstack React Query",
-    image: "https://tanstack.com/_build/assets/logo-color-600w-Bx4vtR8J.png",
-  },
-  {
     name: "Tailwind CSS",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1687582312029-Skill-3.png?alt=media&token=c3af5c6d-23da-40d7-bdd4-261bf832c040",
@@ -54,15 +50,6 @@ export const skills = [
     name: "Material UI",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607159118-Skill-4.png?alt=media&token=d9db5d59-96cc-4394-8c70-c8dcdeb42e085",
-  },
-  {
-    name: "Redux",
-    image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607068837-Skill-3.png?alt=media&token=3da84ce4-3b1b-4789-aa09-eb2ddccbef82",
-  },
-  {
-    name: "Zustand",
-    image: "https://img.stackshare.io/service/11559/zustand.png",
   },
   {
     name: "Node JS",
@@ -302,7 +289,7 @@ export const testimonials = [
     role: "Backend Developer at Shotcoder Tech",
     photo: "https://www.nirdeshpokhrel.com.np/_nuxt/nirdesh.9b0f20ef.jpg",
     description:
-      "He is a hardworking and helpful frontend developer. He consistently brings our designs to life with precision, creating seamless and accurate websites using React and Next.js. His dedication ensures our visions are perfectly realized.",
+      "Working with Prajwol Neupane on the Shikshya App has been a fantastic experience. As a Mid Level Backend Developer, I’ve seen firsthand Prajwol Neupane's expertise in React and Next.js. His ability to deliver clean, efficient code and their strong problem-solving skills have been crucial to our project's success. His collaborative spirit and attention to detail ensure our school management website is both functional and user-friendly. I highly recommend Prajwol Neupane for any frontend development role.",
     links: [
       {
         name: "linkedin",
@@ -324,7 +311,7 @@ export const testimonials = [
     photo:
       "https://media.licdn.com/dms/image/D5603AQGj0oa6C1zROA/profile-displayphoto-shrink_800_800/0/1715511188175?e=1723075200&v=beta&t=XMYj-8Gb8Y-8LU99mGePvIreeLYQEVjXlhqVGiK-Y9Q",
     description:
-      "He is a hardworking and helpful frontend developer. He consistently brings our designs to life with precision, creating seamless and accurate websites using React and Next.js. His dedication ensures our visions are perfectly realized.",
+      "I have had the pleasure of working with Prajwol Neupane on both the Shikshya App, a school management website, and the Metal Recycle Project. As a Mid Level Flutter Developer, I’ve been consistently impressed by Prajwol's hard work and helpful nature as a frontend developer. Prajwol's dedication ensures our visions are perfectly realized, making him an invaluable asset to our team.",
     links: [
       {
         name: "linkedin",
@@ -346,7 +333,7 @@ export const testimonials = [
     photo:
       "https://media.licdn.com/dms/image/D5603AQFPHg-x2n-GPw/profile-displayphoto-shrink_800_800/0/1712045787459?e=1722470400&v=beta&t=D1CzCZ1Kl2C5rcq-CkFPm1_2au4vh-LYsAi-obAw6lk",
     description:
-      "He is a hardworking and helpful frontend developer. He consistently brings our designs to life with precision, creating seamless and accurate websites using React and Next.js. His dedication ensures our visions are perfectly realized.",
+      "Prajwol Neupane is a hardworking and helpful frontend developer. He consistently brings our designs to life with precision, creating seamless and accurate websites using React and Next.js. His dedication ensures our visions are perfectly realized. Working together on the Metal Recycle Project has been a great experience, and his skills have significantly contributed to our project's success.",
     links: [
       {
         name: "linkedin",
@@ -386,7 +373,7 @@ export const activity = [
     title: "Community of the Year Award at Herald DevFest",
     description: [
       `I'm proud to announce that the UI Visuals Community won the prestigious Community of the Year award at Herald DevFest. Our team secured funding worth Rs 3 Lakhs for our innovative project idea "DesignXplore." This project pitches a UI-based competition that covers all the fundamentals of UI, with the exciting prize of engaging with an astronaut in space for the winner.`,
-      `As a member of the UI Visuals Community, I played a crucial role in pitching ideas and organizing events. This annual competition, known as DevFest, spans a month and includes various events. This year, we successfully conducted a total of six events, showcasing our dedication and collaborative spirit. Additionally, congratulations to the 1st runner-up, IOT Innovators, who also received Rs 3 Lakhs for their project "Tech Connect."`,
+      `As a member of the UI Visuals Community, I played a crucial role in pitching ideas and organizing events. This annual competition, known as DevFest, spans a month and includes various events. This year, we successfully conducted a total of six events, showcasing our dedication and collaborative spirit."`,
     ],
   },
 ];

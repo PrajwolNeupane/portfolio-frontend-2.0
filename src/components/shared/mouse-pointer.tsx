@@ -27,7 +27,7 @@ export default function MousePointer() {
   }, [handlePointerMove]);
 
   return (
-    <div className="absolute top-0 overflow-hidden w-full h-full z-[-1]">
+    <div className="absolute top-0 overflow-hidden w-full h-full z-[-1] sm:block hidden">
       <div className="h-[100%] w-[100%] top-0 absolute z-[-1] backdrop-blur-[200px]"></div>
       <div
         id="blob"

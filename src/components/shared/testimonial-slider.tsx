@@ -139,17 +139,21 @@ export function Slide({
   };
 
   return (
-    <div className="bg-testimonial-gradient w-[650px] py-8 px-6 rounded-2xl mx-auto mb-10">
+    <div className="bg-testimonial-gradient 2xl:w-[650px] xl:w-[600px] lg:w-[550px] rg:w-[530px] md:w-[500px] sm:w-[320px] w-[280px] py-8 px-6 rounded-2xl mx-auto mb-10">
       <div className="w-full flex flex-col gap-2 items-center justify-between">
         <Image
           src={image}
           alt="Person Image"
           width={300}
           height={300}
-          className="rounded-full w-[150px] aspect-square object-cover"
+          className="rounded-full lg:w-[150px] md:w-[110px] sm:w-[90px] w-[70px] aspect-square object-cover"
         />
-        <h3 className="text-sm text-gray-300 leading-[120%] mt-2">{name}</h3>
-        <p className="text-main-lighter text-2xs leading-[120%]">{role}</p>
+        <h3 className="lg:text-sm md:text-xs text-2xs text-gray-300 leading-[120%] mt-2">
+          {name}
+        </h3>
+        <p className="text-main-lighter lg:text-2xs md:text-3xs text-[12px] text-center leading-[120%]">
+          {role}
+        </p>
         <div className="w-full items-center flex justify-center gap-4">
           {links.map((curr, indx) => {
             if (curr.name == "mail") {
@@ -173,7 +177,9 @@ export function Slide({
             }
           })}
         </div>
-        <p className="text-gray-100 text-xs text-center">{description}</p>
+        <p className="text-gray-100 lg:text-xs md:text-2xs text-3xs text-center">
+          {description}
+        </p>
       </div>
     </div>
   );
@@ -186,7 +192,7 @@ export default function TestimonialSlider({ testimonials }: Props) {
         className="flex w-full items-center justify-center my-5 relative"
         id="testimonial-slider"
       >
-        <div className="w-[90%] relative">
+        <div className="2xl:w-[90%] xl:w-[95%] w-[98%] relative">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={30}

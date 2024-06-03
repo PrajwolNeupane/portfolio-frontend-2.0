@@ -7,6 +7,41 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 6px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+.scroll::-webkit-scrollbar:hover {
+  width: 8px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px #262626;
+  border-radius: 10px;
+  background-color: #262626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF7043;
+  height: 4px;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7043;
+}
+
 .stroke-text {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;

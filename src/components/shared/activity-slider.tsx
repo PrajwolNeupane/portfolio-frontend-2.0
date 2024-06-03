@@ -4,8 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import FadeUp from "./fade-up";
 
@@ -75,18 +74,23 @@ export function Slide({
   description: string[];
 }) {
   return (
-    <div className="flex w-full px-[12%] gap-[5%] py-10 items-center">
+    <div className="flex xl:flex-row flex-col w-full px-[12%] xl:gap-[5%] gap-[30px] 2xl:py-10 xl:py-5 py-0 items-center">
       <Image
         src={image}
         width={400}
         height={400}
         alt="Activity 2"
-        className="w-[45%] object-cover"
+        className="xl:w-[45%] w-[70%] xl:object-cover object-contain"
       />
-      <div className="flex w-[60%] flex-col gap-5">
-        <h2 className="text-md text-gray-200">{title}</h2>
+      <div className="flex xl:w-[60%] w-[100%] flex-col gap-5">
+        <h2 className="rg:text-md sm:text-sm text-2xs text-gray-200 xl:text-left text-center">
+          {title}
+        </h2>
         {description.map((curr, indx) => (
-          <p className="text-xs font-light text-gray-300" key={indx}>
+          <p
+            className="rg:text-xs sm:text-2xs text-3xs font-light text-gray-300"
+            key={indx}
+          >
             {curr}
           </p>
         ))}
@@ -99,12 +103,12 @@ export default function ActivitySlider({ activity }: Props) {
   return (
     <FadeUp id="activity-slider" duration={0.75} dealy={0.5}>
       <div
-        className="flex w-full items-center justify-center my-5 relative"
+        className="flex w-full items-center justify-center  relative"
         id="activity-slider"
       >
-        <div className="w-[90%] relative">
+        <div className="2xl:w-[90%] xl:w-[95%] w-[98%] relative">
           <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
             navigation={{

@@ -22,7 +22,7 @@ export default function NavBar() {
     },
     {
       name: "Activities",
-      id: "#about-section",
+      id: "activity-section",
     },
     {
       name: "Testimonials",
@@ -43,9 +43,9 @@ export default function NavBar() {
   };
 
   return (
-    <div className="flex w-full items-center px-20 py-5 justify-between z-[5] sticky top-0 backdrop-blur-[20px]">
+    <div className="lg:flex hidden w-full items-center px-20 py-5 justify-between z-[5] sticky top-0 backdrop-blur-[20px]">
       <h2 className="text-white text-lg font-medium">PN</h2>
-      <div className="flex items-center text-gray-100 text-xs gap-10 ml-20 relative">
+      <div className="flex items-center text-gray-100 text-xs 2xl:gap-10 xl:gap-8 gap-6 2xl:ml-20 xl:ml-14 ml-10 relative">
         {links?.map((curr, indx) => (
           <ScrollLink
             key={indx}
@@ -55,6 +55,7 @@ export default function NavBar() {
             duration={250}
             onSetActive={handleSetActive}
             classID="relative"
+            offset={-20}
           >
             <div
               className={cn(
@@ -76,7 +77,11 @@ export default function NavBar() {
           "https://drive.google.com/file/d/1R6KyuiaXQ7BUbgP6t-knX9lLZ33Rt6sS/view"
         }
       >
-        <Button title="View My CV" className="w-[180px]" variant="filled" />
+        <Button
+          title="View My CV"
+          className="2xl:w-[180px] xl:w-[160px] w-[150px]"
+          variant="filled"
+        />
       </Link>
     </div>
   );

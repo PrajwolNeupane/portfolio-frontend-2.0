@@ -1,13 +1,6 @@
-import dynamic from "next/dynamic";
-
-const NavBar = dynamic(() => import("@/components/shared/nav-bar"), {
-  ssr: false,
-});
-const HeaderSection = dynamic(() => import("@/sections/header-section"), {
-  ssr: false,
-});
-
+import { NavBar } from "@/components/shared";
 import {
+  HeaderSection,
   AboutSection,
   SkillsSection,
   ProjectsSection,
