@@ -24,7 +24,7 @@ export default function SkillsSection() {
           Skill gained so far
         </p>
       </FadeUp>
-      <div className="grid 2xl:grid-cols-5 lg:grid-cols-4 rg:grid-cols-3 grid-cols-2  gap-x-10 gap-y-5">
+      <div className="grid 2xl:grid-cols-5 lg:grid-cols-4 grid-cols-3  gap-x-10 gap-y-5">
         {skills?.map((curr, indx) => (
           <div
             key={indx}
