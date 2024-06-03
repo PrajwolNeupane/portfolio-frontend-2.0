@@ -7,7 +7,8 @@ import ShikshyaAdmin1 from "../../public/assets/projects/shikshya-admin-1.png";
 import ShikshyaAdmin2 from "../../public/assets/projects/shikshya-admin-2.png";
 import ShikshyaAdmin3 from "../../public/assets/projects/shikshya-admin-3.png";
 import ShikshyaAdmin4 from "../../public/assets/projects/shikshya-admin-4.png";
-import Activity2 from "../../public/assets/activity/acitivty_2.png";
+import Activity2 from "../../public/assets/activity/activity_2.png";
+import Activity1 from "../../public/assets/activity/activity_1.png";
 
 export const skills = [
   {
@@ -366,7 +367,7 @@ export const testimonials = [
 export const activity = [
   {
     image: Activity2,
-    title: "Champion of Frontend 2.0 Competition",
+    title: "Winner of Frontend 2.0 Competition",
     description: [
       `I am thrilled to announce that I secured the First Position in the
     Frontend 2.0 competition, a prestigious event organized by the UI
@@ -381,19 +382,11 @@ export const activity = [
     ],
   },
   {
-    image: Activity2,
-    title: "DEVFEST",
+    image: Activity1,
+    title: "Community of the Year Award at Herald DevFest",
     description: [
-      `I am thrilled to announce that I secured the First Position in the
-    Frontend 2.0 competition, a prestigious event organized by the UI
-    Visuals Community within Herald DevCorps at Herald College
-    Kathmandu. The competition challenged participants to create a
-    website using React.js. This achievement is a testament to my
-    dedication and the progress I've made through 1.5 years of daily
-    practice. Additionally, winning this competition has opened the door
-    to an exciting internship opportunity at ShotCoder Tech as a React
-    Developer. This experience has not only honed my skills but also
-    underscored the value of community and continuous learning.`,
+      `I'm proud to announce that the UI Visuals Community won the prestigious Community of the Year award at Herald DevFest. Our team secured funding worth Rs 3 Lakhs for our innovative project idea "DesignXplore." This project pitches a UI-based competition that covers all the fundamentals of UI, with the exciting prize of engaging with an astronaut in space for the winner.`,
+      `As a member of the UI Visuals Community, I played a crucial role in pitching ideas and organizing events. This annual competition, known as DevFest, spans a month and includes various events. This year, we successfully conducted a total of six events, showcasing our dedication and collaborative spirit. Additionally, congratulations to the 1st runner-up, IOT Innovators, who also received Rs 3 Lakhs for their project "Tech Connect."`,
     ],
   },
 ];

@@ -36,7 +36,7 @@ export default function FadeUp({
         },
       }
     );
-  }, []);
+  }, [dealy, duration, id]);
 
   return <>{children}</>;
 }

@@ -7,8 +7,6 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function NavBar() {
   const [currentIndex, setCurrentIndex] = useState<null | number>(null);
-  const [viewportWidth, setViewportWidth] = useState(0);
-
   const links = [
     {
       name: "About",

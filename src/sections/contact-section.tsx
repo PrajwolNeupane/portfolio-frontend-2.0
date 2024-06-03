@@ -1,5 +1,8 @@
-import ContactForm from "@/components/contact-form";
 import { FadeUp } from "@/components/shared";
+import dynamic from "next/dynamic";
+const ContactForm = dynamic(() => import("@/components/contact-form"), {
+  ssr: false,
+});
 
 export default function ContactSection() {
   return (

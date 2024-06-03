@@ -75,13 +75,13 @@ export function Slide({
   description: string[];
 }) {
   return (
-    <div className="flex w-full px-[12%] gap-[5%] py-10">
+    <div className="flex w-full px-[12%] gap-[5%] py-10 items-center">
       <Image
         src={image}
         width={400}
         height={400}
         alt="Activity 2"
-        className="w-[45%]"
+        className="w-[45%] object-cover"
       />
       <div className="flex w-[60%] flex-col gap-5">
         <h2 className="text-md text-gray-200">{title}</h2>
