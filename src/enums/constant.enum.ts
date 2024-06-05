@@ -283,6 +283,17 @@ export const projects = [
   },
 ];
 
+export const projectsMetaData = projects.map((project) => ({
+  id: project.id,
+  title: project.title,
+  description: project.description,
+  skills: project.skills.map((skill) => skill?.name).join(", "),
+  link: project.link,
+  repo_link: project.repo_link,
+  photo_url: project.photo_url,
+  rating: project.rating,
+}));
+
 export const testimonials = [
   {
     name: "Nirdesh Pokharel",
@@ -386,6 +397,15 @@ export const getProject = (id: number) => {
   const index = projects.findIndex((curr) => curr.id === id);
   if (index != -1) {
     return projects[index];
+  } else {
+    return null;
+  }
+};
+
+export const getProjectMetaData = (id: number) => {
+  const index = projectsMetaData.findIndex((curr) => curr.id === id);
+  if (index != -1) {
+    return projectsMetaData[index];
   } else {
     return null;
   }
