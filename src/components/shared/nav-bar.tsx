@@ -43,9 +43,11 @@ export default function NavBar() {
   };
 
   return (
-    <div className="lg:flex hidden w-full items-center px-20 py-5 justify-between z-[5] sticky top-0 backdrop-blur-[20px]">
-      <h2 className="text-white text-lg font-medium">PN</h2>
-      <div className="flex items-center text-gray-100 text-xs 2xl:gap-10 xl:gap-8 gap-6 2xl:ml-20 xl:ml-14 ml-10 relative">
+    <div className="flex w-full items-center lg:px-20 rg:px-16 md:px-12 sm:px-10  px-6 py-5 justify-between z-[5] sticky top-0 backdrop-blur-[20px]">
+      <h2 className="text-white lg:text-lg md:text-rg text-sm font-medium">
+        PN
+      </h2>
+      <div className="lg:flex hidden items-center text-gray-100 text-xs 2xl:gap-10 xl:gap-8 gap-6 2xl:ml-20 xl:ml-14 ml-10 relative">
         {links?.map((curr, indx) => (
           <ScrollLink
             key={indx}
@@ -79,7 +81,7 @@ export default function NavBar() {
       >
         <Button
           title="View My CV"
-          className="2xl:w-[180px] xl:w-[160px] w-[150px]"
+          className="2xl:w-[180px] xl:w-[160px] md:w-[150px] w-[120px]"
           variant="filled"
         />
       </Link>

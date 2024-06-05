@@ -16,7 +16,7 @@ export default function Button({ title, variant = "filled", ...props }: Props) {
     className = `border-[1px] border-main py-2 px-2 rounded-md text-2xs text-white`;
   } else if (variant == "filled") {
     className =
-      "bg-main-lighter py-2 px-2 rounded-md text-2xs text-white hover:bg-main transition-all ease-in delay-150";
+      "bg-main-lighter py-2 px-2 rounded-md md:text-2xs text-3xs text-white hover:bg-main transition-all ease-in delay-150";
   }
   return (
     <button {...props} className={cn(className, props.className)}>

@@ -6,17 +6,23 @@ import { toast } from "react-toastify";
 import { FadeUp } from "./shared";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "@/config/firebase.config";
+import { useState } from "react";
 
 export default function ContactForm() {
+  const [sendingMessage, setSendingMessage] = useState(false);
+
   const {
     register,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm({
     resolver: yupResolver(contactSchema),
   });
 
   const handleEmailClick = async (data: ContactSchema) => {
+    setSendingMessage(true);
+    console.log(data);
     try {
       await addDoc(collection(db, "messages"), {
         name: data.name,
@@ -24,11 +30,18 @@ export default function ContactForm() {
         message: data.message,
         timestamp: new Date(),
       });
+      reset({
+        message: "",
+        name: "",
+        email: "",
+      });
       toast.success("Message successfully send");
     } catch (e) {
       console.log("--Error on Form Submit----");
       console.log(e);
       toast.error("Message failed to send");
+    } finally {
+      setSendingMessage(false);
     }
   };
 
@@ -65,6 +78,7 @@ export default function ContactForm() {
         ></textarea>
         <p className="text-red-500 text-2xs">{errors.message?.message}</p>
         <button
+          disabled={sendingMessage}
           type="submit"
           className="bg-background-darker text-gray-300 py-3 text-2xs rounded-md hover:bg-background"
         >

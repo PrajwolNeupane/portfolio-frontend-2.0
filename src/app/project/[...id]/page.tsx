@@ -13,7 +13,7 @@ export default function Page({ params: { id } }: { params: { id: string } }) {
   const project = getProject(parseInt(id));
 
   return (
-    <div className="flex relative xl:flex-row flex-col-reverse w-full min-h-[100vh] pb-5 pt-16 px-[5%] gap-20">
+    <div className="flex relative xl:flex-row flex-col-reverse w-full min-h-[100vh] pb-5 pt-16 px-[5%] lg:gap-20 gap-10">
       <TransLink
         href={"/#projects-section"}
         className="flex items-center gap-3 group w-[80px] absolute top-5"
@@ -58,8 +58,8 @@ export default function Page({ params: { id } }: { params: { id: string } }) {
           )}
         </div>
       </div>
-      <div className="2xl:w-[60%] xl:w-[50%] w-full flex xl:flex-col flex-row gap-2 justify-end">
-        <div>
+      <div className="2xl:w-[60%] xl:w-[50%] w-full flex xl:flex-col lg:flex-row-reverse flex-col-reverse xl:gap-2 lg:gap-10 gap-5 justify-end">
+        <div className="xl:w-full lg:w-[40%] w-full flex flex-col">
           <h3 className="text-gray-300 lg:text-sm md:text-xs text-2xs">
             Skills
           </h3>
@@ -88,7 +88,7 @@ export default function Page({ params: { id } }: { params: { id: string } }) {
             alt="Project Image"
             width={1000}
             height={1000}
-            className="aspect-video w-full object-cover mt-6"
+            className="aspect-video xl:w-full lg:w-[60%] w-full object-cover mt-6"
             src={project?.photo_url!}
           />
         ) : (
