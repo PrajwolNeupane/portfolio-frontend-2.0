@@ -25,9 +25,7 @@ export function generateMetadata({ params: { id } }: Props): Metadata {
     };
   }
 
-  const photoUrls = Array.isArray(projectMetaData.photo_url)
-    ? projectMetaData.photo_url.map(String)
-    : [String(projectMetaData.photo_url)];
+  const photoUrls = [projectMetaData.photo_url];
 
   // Add any other metadata fields you want to include
   return {
