@@ -1,4 +1,4 @@
-import { getProject } from "@/enums/constant.enum";
+import { getProject, getProjectMetaData } from "@/enums/constant.enum";
 import { Link as TransLink } from "next-view-transitions";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,8 +8,49 @@ import {
   WebsiteIcon,
 } from "../../../../public/assets/icons";
 import ImageSlider from "./image-slider";
+import { Metadata } from "next";
 
-export default function Page({ params: { id } }: { params: { id: string } }) {
+interface Props {
+  params: { id: string };
+}
+
+export function generateMetadata({ params: { id } }: Props): Metadata {
+  const projectMetaData = getProjectMetaData(parseInt(id));
+
+  if (projectMetaData == null) {
+    // Handle the case where the project is not found
+    return {
+      title: "Project Not Found",
+      description: "The requested project could not be found.",
+    };
+  }
+
+  const photoUrls = [projectMetaData.photo_url];
+
+  // Add any other metadata fields you want to include
+  return {
+    title: `Prajwol Neupane - ${projectMetaData.title}`,
+    description: projectMetaData.description,
+    openGraph: {
+      type: "website",
+      url: projectMetaData.link,
+      title: `Prajwol Neupane - ${projectMetaData.title}`,
+      description: projectMetaData.description,
+      images: photoUrls.map((url) => ({
+        url,
+        title: `Prajwol Neupane - ${projectMetaData.title}`,
+      })),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Prajwol Neupane - ${projectMetaData.title}`,
+      description: projectMetaData.description,
+      images: photoUrls,
+    },
+    keywords: projectMetaData.skills,
+  } as Metadata;
+}
+export default function Page({ params: { id } }: Props) {
   const project = getProject(parseInt(id));
 
   return (

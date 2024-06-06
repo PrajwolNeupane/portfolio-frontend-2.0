@@ -9,6 +9,7 @@ import ShikshyaAdmin3 from "../../public/assets/projects/shikshya-admin-3.png";
 import ShikshyaAdmin4 from "../../public/assets/projects/shikshya-admin-4.png";
 import Activity2 from "../../public/assets/activity/activity_2.png";
 import Activity1 from "../../public/assets/activity/activity_1.png";
+import StickerPasal from "../../public/assets/projects/sticker-pasal-1.png";
 
 export const skills = [
   {
@@ -281,7 +282,70 @@ export const projects = [
     photo_url: [ShikshyaAdmin1, ShikshyaAdmin2, ShikshyaAdmin3, ShikshyaAdmin4],
     rating: 5,
   },
+  {
+    id: 7,
+    title: "Sticker Pasal",
+    skills: [
+      {
+        name: "Next JS",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1690811595806-Skill-1.png?alt=media&token=2c050a93-e792-43dd-b85f-a62e3071ddd2",
+      },
+      {
+        name: "Typescript",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607108089-Skill-6.png?alt=media&token=8c4cbc57-3551-44d7-9b68-fb0f2828c178",
+      },
+      {
+        name: "Redux",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607068837-Skill-3.png?alt=media&token=3da84ce4-3b1b-4789-aa09-eb2ddccbef82",
+      },
+      {
+        name: "Mongo DB",
+        image:
+          "https://firebasestorage.googleapis.com/v0/b/portfolio-backend-64b7e.appspot.com/o/1670607195809-Skill-7.png?alt=media&token=63715b9b-2572-423c-bc7d-b37c3b451d0d",
+      },
+      {
+        name: "Bootstrap",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+      },
+      {
+        name: "Khalti Payment Gateway",
+        image:
+          "https://play-lh.googleusercontent.com/Xh_OlrdkF1UnGCnMN__4z-yXffBAEl0eUDeVDPr4UthOERV4Fll9S-TozSfnlXDFzw",
+      },
+      {
+        name: "Cheerio",
+        image: "https://cheerio.js.org/img/orange-c.svg",
+      },
+      {
+        name: "JWT",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcY_o8-YfCiV-nK9qPbVlD6dX4fMafOzGEAz0GxEbaDwie9YXkevfsV0mIKHtoddszows&usqp=CAU",
+      },
+    ],
+    description:
+      "Sticker Pasal is an online shop for your stickers needs. Using the Cheerio package, I used a web scrapping technique to get data from sticker Nepal. Bootstrap is used for CSS, Redux is used to manage the state of the website, Next JS with typescript is used to build the whole website, MongoDB is used as Database, JWT is used to generate authentication tokens, bcrypt.js is used to hash passwords and for payment gateway, I used Khalti.",
+    link: "https://stickerpasal.prajwolneupane.com.np/",
+    repo_link: "https://github.com/PrajwolNeupane/Sticker_Pasal",
+    photo_url: StickerPasal,
+    rating: 5,
+  },
 ];
+
+export const projectsMetaData = projects.map((project) => ({
+  id: project.id,
+  title: project.title,
+  description: project.description,
+  skills: project.skills.map((skill) => skill?.name).join(", "),
+  link: project.link,
+  repo_link: project.repo_link,
+  photo_url:
+    "https://builtin.com/sites/www.builtin.com/files/styles/og/public/2022-11/data-science-projects.jpg",
+  rating: project.rating,
+}));
 
 export const testimonials = [
   {
@@ -386,6 +450,15 @@ export const getProject = (id: number) => {
   const index = projects.findIndex((curr) => curr.id === id);
   if (index != -1) {
     return projects[index];
+  } else {
+    return null;
+  }
+};
+
+export const getProjectMetaData = (id: number) => {
+  const index = projectsMetaData.findIndex((curr) => curr.id === id);
+  if (index != -1) {
+    return projectsMetaData[index];
   } else {
     return null;
   }
